@@ -3,11 +3,10 @@ import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
 import Menu from "./componentes/Menu";
 
-const App = () => {
+const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Menu />
-
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/sobremim" element={<SobreMim />} />
@@ -17,4 +16,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AppRoutes;
