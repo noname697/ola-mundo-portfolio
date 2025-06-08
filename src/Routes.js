@@ -5,7 +5,12 @@ import Menu from "./componentes/Menu";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_relativeSplatPath: true,
+        v7_startTransition: true,
+      }}
+    >
       <Menu />
       <Routes>
         <Route path="/" element={<Inicio />} />
