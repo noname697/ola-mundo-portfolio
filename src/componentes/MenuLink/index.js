@@ -1,19 +1,15 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./MenuLink.module.css";
 
-const MenuLink = ({children, to}) => {
-  const localizacao = useLocation();
-  // useLocation() é um hook que retorna o pathname atual
-
+const MenuLink = ({ children, to }) => {
   return (
-    <Link
-      className={`${styles.link} ${
-        localizacao.pathname === to ? styles.linkDestacado : ""
-      }`}
+    <NavLink
+      className={({ isActive }) => (isActive ? styles.linkDestacado : "")}
       to={to}
+      end
     >
       {children}
-    </Link>
+    </NavLink>
   );
 };
 
