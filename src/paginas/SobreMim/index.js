@@ -15,46 +15,41 @@ const SobreMim = () => {
       />
 
       <p className={styles.paragrafo}>
-        Oi, tudo bem? Eu sou instrutor de Front-end na Alura e estou feliz de te
-        ver por aqui.
+        Oi, tudo bem? Eu sou um estudante de programação e estou feliz de te ver
+        por aqui.
       </p>
 
       <p className={styles.paragrafo}>
-        Minha história com programação começou no Instituto Federal do Piauí
-        (IFPI), quando fiz o ensino médio integrado ao curso de Informática. Eu
-        aprendi lógica de programação e o básico de várias linguagens, como PHP,
-        Python, Java, mas sem aprofundar muito em cada uma delas. Eu gostava
-        muito de estudar programação, mas na época não fazia ideia de que
-        trabalharia com isso hoje.
+        Minha história com o mundo da tecnologia começou quando tinha apenas 13
+        anos, naquele ano teve a pandemia do COVID-19 e nesse período tive
+        vários aprendizados. Eu aprendi lógica de programação e o básico de
+        várias áreas, como web design, design, JavaScript, mas sem aprofundar
+        muito em cada uma delas. Eu gostava muito de estudar HTML e CSS, mas na
+        época estudava apenas por diversão e com cursos no youtube.
       </p>
 
       <p className={styles.paragrafo}>
-        No ensino superior, escolhi cursar Engenharia Elétrica na Universidade
-        Federal do Piauí (UFPI). Lá eu consegui entrar no PET (Programa de
-        Educação Tutorial), um grupo acadêmico que contribui de diversas formas
-        para o curso. Lá eu tive a oportunidade de estudar desenvolvimento web
-        para ser um dos mantenedores do site deles.{" "}
+        até que no ensino médio, escolhi estudar no Instituto Federal
+        Catarinense(IFC). Lá eu escolhi fazer o Curso Técnico de Informática
+        Integrado ao Ensino Médio, que me proporcionou e está proporcionando até
+        hoje uma base sólida em programação e desenvolvimento web. Durante o
+        curso, estou tendo a oportunidade de aprender várias linguagens de
+        programação, como Python, Java e JavaScript, além de me aprofundar em
+        HTML e CSS.
       </p>
 
       <p className={styles.paragrafo}>
-        Com isso tive minha experiência de dev mais próxima da realidade, com
-        prazos de implementação para o site, e aprendi muito enquanto
-        codificava.
+        Também tive a oportunidade de fazer estágio no setor de TI do IFC com
+        isso tive uma experiência de trabalho neste mundo mais próxima da
+        realidade, com prazos de implementação, e aprendi muito enquanto fazia
+        as tarefas do cotidiano.
       </p>
 
       <p className={styles.paragrafo}>
-        E foi enquanto eu estava no PET que decidi procurar um estágio em
-        desenvolvimento web. Eu encontrei uma vaga na Alura para o Scuba Team e
-        percebi que ela aliava duas paixões minhas: programação e educação. Para
-        minha felicidade, fui escolhido para fazer parte do time.
-      </p>
-
-      <p className={styles.paragrafo}>
-        Desde então, tem sido aprenas aprendizados atrás de aprendizados. A
-        Alura é uma escola não só para seus alunos e alunas, mas também para os
-        colaboradores e colaboradoras. Hoje sou muito feliz de ter a
-        oportunidade de trazer esses conteúdos ricos e encantadores para você.
-        Espero que aprenda bastante!
+        Desde então, tem sido aprenas aprendizados atrás de aprendizados. Desde
+        ano passado estou também estudando na Alura, onde já obtive proficiência em várias
+        tecnologias, como: JavaScript, Node.js, Git e GitHub, API's, HTTP, Sequelize, Blender e agora React.js. Agora meus planos são aprender mais sobre React e migrar para o TypeScript. Hoje sou muito feliz de
+        ter a oportunidade de saber me virar nesses conteúdos e espero um dia conseguir trabalhar nesta área!
       </p>
     </PostModelo>
   );
