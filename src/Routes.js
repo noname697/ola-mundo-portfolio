@@ -3,6 +3,7 @@ import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
 import Menu from "./componentes/Menu";
 import Rodape from "componentes/Rodape";
+import PaginaPadrao from "componentes/PaginaPadrao";
 
 const AppRoutes = () => {
   return (
@@ -14,8 +15,23 @@ const AppRoutes = () => {
     >
       <Menu />
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/sobremim" element={<SobreMim />} />
+        <Route path="/" element={<PaginaPadrao />}>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/sobremim" element={<SobreMim />} />
+        </Route>
+        {/* 
+        
+          Na Rota "/", a estrutura a ser renderizada é a PaginaPadrao:
+          <PaginaPadrao>
+            <Inicio />
+          </PaginaPadrao>
+
+          Na Rota "/sobremim", a estrutura a ser renderizada é a PaginaPadrao:
+          <PaginaPadrao>
+            <SobreMim />
+          </PaginaPadrao>
+
+        */}
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
       <Rodape />
