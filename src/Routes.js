@@ -4,6 +4,7 @@ import SobreMim from "./paginas/SobreMim";
 import Menu from "./componentes/Menu";
 import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
+import Post from "paginas/Post";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
+          <Route path="posts/:id" element={<Post />}/>
         </Route>
         {/* 
         

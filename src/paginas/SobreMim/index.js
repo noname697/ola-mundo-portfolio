@@ -47,9 +47,12 @@ const SobreMim = () => {
 
       <p className={styles.paragrafo}>
         Desde então, tem sido aprenas aprendizados atrás de aprendizados. Desde
-        ano passado estou também estudando na Alura, onde já obtive proficiência em várias
-        tecnologias, como: JavaScript, Node.js, Git e GitHub, API's, HTTP, Sequelize, Blender e agora React.js. Agora meus planos são aprender mais sobre React e migrar para o TypeScript. Hoje sou muito feliz de
-        ter a oportunidade de saber me virar nesses conteúdos e espero um dia conseguir trabalhar nesta área!
+        ano passado estou também estudando na Alura, onde já obtive proficiência
+        em várias tecnologias, como: JavaScript, Node.js, Git e GitHub, API's,
+        HTTP, Sequelize, Blender e agora React.js. Agora meus planos são
+        aprender mais sobre React e migrar para o TypeScript. Hoje sou muito
+        feliz de ter a oportunidade de saber me virar nesses conteúdos e espero
+        um dia conseguir trabalhar nesta área!
       </p>
     </PostModelo>
   );
