@@ -34,7 +34,7 @@ const AppRoutes = () => {
           </PaginaPadrao>
 
         */}
-        <Route path="posts/:id" element={<Post />} />
+        <Route path="posts/:id/*" element={<Post />} />
         <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
