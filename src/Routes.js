@@ -5,6 +5,7 @@ import Menu from "./componentes/Menu";
 import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/Post";
+import NaoEncontrada from "paginas/NaoEncontrada";
 
 const AppRoutes = () => {
   return (
@@ -19,7 +20,7 @@ const AppRoutes = () => {
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post />}/>
+          <Route path="posts/:id" element={<Post />} />
         </Route>
         {/* 
         
@@ -34,7 +35,7 @@ const AppRoutes = () => {
           </PaginaPadrao>
 
         */}
-        <Route path="*" element={<div>Página não encontrada</div>} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
     </BrowserRouter>
