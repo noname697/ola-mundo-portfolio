@@ -1,8 +1,10 @@
-import { useParams } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import posts from "../../json/posts.json";
 import PostModelo from "componentes/PostModelo/PostModelo";
 import ReactMarkdown from "react-markdown";
-import "./Post.css"
+import "./Post.css";
+import NaoEncontrada from "paginas/NaoEncontrada";
+import PaginaPadrao from "componentes/PaginaPadrao";
 
 const Post = () => {
   const { id } = useParams();
@@ -11,19 +13,28 @@ const Post = () => {
     return post.id === Number(id);
   });
 
-  if(!post){
-    return <h1>Post não encontrado</h1>
+  if (!post) {
+    return <NaoEncontrada />;
   }
 
   return (
-    <PostModelo
-      fotoCapa={`/assets/posts/${post.id}/capa.png`}
-      titulo={post.titulo}
-    >
-      <div className="post-markdown-container">
-        <ReactMarkdown>{post.texto}</ReactMarkdown>
-      </div>
-    </PostModelo>
+    <Routes>
+      <Route path="*" element={<PaginaPadrao />}>
+        <Route
+          index
+          element={
+            <PostModelo
+              fotoCapa={`/assets/posts/${post.id}/capa.png`}
+              titulo={post.titulo}
+            >
+              <div className="post-markdown-container">
+                <ReactMarkdown>{post.texto}</ReactMarkdown>
+              </div>
+            </PostModelo>
+          }
+        />
+      </Route>
+    </Routes>
   );
 };
 
